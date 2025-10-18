@@ -40,7 +40,7 @@ public static class ZipArchivePackager
             File.Delete(zipPath);
         }
 
-        var portableExe = Path.Combine(Paths.SolutionRoot, "NAPS2.App.PortableLauncher", "bin", "Release", "net462",
+        var portableExe = Path.Combine(Paths.SolutionRoot, "NAPS2.App.PortableLauncher", "bin", "Release", "net47",
             "NAPS2.Portable.exe");
         if (!File.Exists(portableExe))
         {
